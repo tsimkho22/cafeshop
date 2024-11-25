@@ -1,4 +1,4 @@
-import 'package:cafeshop/widget/itemWidget.dart';
+import 'package:cafeshop/widget/itemWidgets.dart';
 import 'package:flutter/material.dart';
 
 class productScreen extends StatefulWidget {
@@ -110,9 +110,6 @@ class _productScreenState extends State<productScreen>
                       BorderSide(width: 2, color: Colors.amber.shade700),
                 ),
                 labelStyle: TextStyle(fontSize: 16),
-                labelPadding: EdgeInsets.symmetric(
-                  horizontal: 10,
-                ),
                 tabs: [
                   Tab(
                     text: 'ກາເຟຮ້ອນ',

@@ -9,7 +9,7 @@ class itemWidget extends StatelessWidget {
       physics: NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       shrinkWrap: true,
-      childAspectRatio: (150 / 195),
+      childAspectRatio: 200 / 300,
       children: [
         for (int i = 0; i < img.length; i++)
           Container(
@@ -46,34 +46,23 @@ class itemWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    bottom: 10,
-                  ),
-                  child: Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      children: [
-                        Text(
-                          img[i],
-                          style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          'ເຄື່ອງດື່ມດີທີ່ສຸດ',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.white38,
-                          ),
-                        )
-                      ],
+                Column(
+                  children: [
+                    Text(
+                      img[i],
+                      style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
-                  ),
+                    Text(
+                      'ເຄື່ອງດື່ມດີທີ່ສຸດ',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white38,
+                      ),
+                    )
+                  ],
                 ),
               ],
             ),
